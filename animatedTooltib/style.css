@@ -1,0 +1,32 @@
+/* Styles for the tooltip */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+}
